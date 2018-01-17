@@ -1,6 +1,7 @@
 # Ignore these directories
 .idea
 .gradle
+build/
 
 # And make these go away
 *.properties
