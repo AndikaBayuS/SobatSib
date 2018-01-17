@@ -15,17 +15,12 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 
-/**
- * Created by andika on 1/15/18.
- */
-
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         Toast.makeText(this, "Map is Ready", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onMapReady: map is ready");
-        mMap = googleMap;
     }
 
     private static final String TAG = "MapActivity";
@@ -35,7 +30,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
 
     private Boolean mLocationPermissionGranted = false;
-    private GoogleMap mMap;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -83,8 +77,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         switch (requestCode){
             case LOCATION_PERMISSION_REQUEST_CODE:{
                 if(grantResults.length > 0){
-                    for (int i = 0; i < grantResults.length; i++){
-                        if(grantResults[i] != PackageManager.PERMISSION_DENIED){
+                    for (int grantResult : grantResults) {
+                        if (grantResult != PackageManager.PERMISSION_DENIED) {
                             mLocationPermissionGranted = false;
                             Log.d(TAG, "onRequestPermissionsResult: Permission failed");
                             return;

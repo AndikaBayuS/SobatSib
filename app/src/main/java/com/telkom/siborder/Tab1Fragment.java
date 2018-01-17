@@ -1,8 +1,5 @@
 package com.telkom.siborder;
 
-/**
- * Created by andika on 1/12/18.
- */
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;

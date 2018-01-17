@@ -11,21 +11,19 @@ import android.widget.Toast;
 import com.telkom.siborder.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
-Button Login;
-EditText U, P;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Login = (Button) findViewById(R.id.BtnLogin);
-        U = (EditText) findViewById(R.id.Username);
-        P = (EditText) findViewById(R.id.Password);
-        Login.setOnClickListener(new View.OnClickListener() {
+        Button login = findViewById(R.id.btn_login);
+        final EditText username = findViewById(R.id.username);
+        final EditText password = findViewById(R.id.password);
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String User = U.getText().toString();
-                String Pass = P.getText().toString();
+                String User = username.getText().toString();
+                String Pass = password.getText().toString();
                 if(User.equals("guest") && Pass.equals("guest")){
                     Intent next = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(next);

@@ -26,11 +26,11 @@
             android:src="@drawable/logo"/>
 
         <EditText
-            android:id="@+id/Username"
+            android:id="@+id/username"
             android:background="@drawable/rounded"
             android:layout_width="335dp"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_person"
+            android:drawableStart="@drawable/ic_person"
             android:drawablePadding="20dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
@@ -41,7 +41,7 @@
             android:singleLine="true" />
 
         <EditText
-            android:id="@+id/Password"
+            android:id="@+id/password"
             android:layout_width="335dp"
             android:background="@drawable/rounded"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:singleLine="true" />
 
         <Button
-            android:id="@+id/BtnLogin"
+            android:id="@+id/btn_login"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:background="@drawable/buttonred"

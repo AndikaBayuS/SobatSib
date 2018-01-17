@@ -1,9 +1,5 @@
 package com.telkom.siborder;
 
-/**
- * Created by andika on 1/17/18.
- */
-
 import android.annotation.SuppressLint;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.internal.BottomNavigationMenuView;
@@ -11,9 +7,9 @@ import android.support.design.widget.BottomNavigationView;
 import android.util.Log;
 import java.lang.reflect.Field;
 
-public class BottomNavigationViewHelper {
+class BottomNavigationViewHelper {
     @SuppressLint("RestrictedApi")
-    public static void disableShiftMode(BottomNavigationView view) {
+    static void disableShiftMode(BottomNavigationView view) {
         BottomNavigationMenuView menuView = (BottomNavigationMenuView) view.getChildAt(0);
         try {
             Field shiftingMode = menuView.getClass().getDeclaredField("mShiftingMode");

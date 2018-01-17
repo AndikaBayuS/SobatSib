@@ -7,18 +7,17 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.telkom.siborder.R;
-
 public class SplashActivity extends AppCompatActivity {
-private ImageView iv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        iv = (ImageView) findViewById(R.id.iv);
-        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.transition);
+        ImageView iv = findViewById(R.id.iv);
+
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.transition);
         iv.startAnimation(myanim);
-        final Intent i = new Intent(this, com.telkom.siborder.LoginActivity.class);
+        final Intent login = new Intent(this, com.telkom.siborder.LoginActivity.class);
+
         Thread timer = new Thread(){
             public void run (){
                 try {
@@ -27,7 +26,7 @@ private ImageView iv;
                     e.printStackTrace();
                 }
                 finally {
-                    startActivity(i);
+                    startActivity(login);
                     finish();
                 }
             }
