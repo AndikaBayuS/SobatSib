@@ -16,6 +16,10 @@
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable
 
+-keepclassmembers class android.support.design.internal.BottomNavigationMenuView {
+    boolean mShiftingMode;
+}
+
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile

@@ -1,5 +1,6 @@
 package com.telkom.siborder;
 
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -9,8 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
-    private SectionPagerAdapter mSectionpageAdapter;
-
+    private SectionPagerAdapter mSectionpageAdap;
     private ViewPager mViewPager;
 
     @Override
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mSectionpageAdapter = new SectionPagerAdapter(getSupportFragmentManager());
+        SectionPagerAdapter mSectionpageAdapter = new SectionPagerAdapter(getSupportFragmentManager());
 
         mViewPager = (ViewPager) findViewById(R.id.container);
         setupViewPager(mViewPager);
@@ -28,12 +28,15 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setText("Node B");
         tabLayout.getTabAt(1).setText("Maps");
         tabLayout.getTabAt(2).setText("Quadric");
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
     }
 
     private void setupViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Tab1Fragment());
-        adapter.addFragment(new MapActivity());
+        adapter.addFragment(new Tab2Fragment());
         adapter.addFragment(new Tab3Fragment());
         viewPager.setAdapter(adapter);
     }
