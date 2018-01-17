@@ -8,13 +8,13 @@
 
     <item
         android:id="@+id/ongoing"
-        android:icon="@drawable/rocket"
+        android:icon="@drawable/ic_ongoing"
         android:title="@string/bar_ongoing">
     </item>
 
     <item
         android:id="@+id/inventory"
-        android:icon="@drawable/square"
+        android:icon="@drawable/ic_inventory"
         android:title="@string/bar_inventory">
 
     </item>
