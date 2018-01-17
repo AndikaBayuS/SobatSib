@@ -18,7 +18,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 
-public class Tab2Fragment extends Fragment implements OnMapReadyCallback {
+public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -26,7 +26,7 @@ public class Tab2Fragment extends Fragment implements OnMapReadyCallback {
         Log.d(TAG, "onMapReady: map is ready");
     }
 
-    private static final String TAG = "Tab2Fragment";
+    private static final String TAG = "MapFragment";
 
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
