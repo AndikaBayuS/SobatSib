@@ -75,16 +75,11 @@
             android:fitsSystemWindows="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:background="@color/colorPrimary"
+            app:theme="@style/AppTheme.Toolbar"
+            app:titleTextAppearance="@style/AppTheme.Toolbar.Title"
+            app:title="@string/dashboard" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dashboard"
-                android:textSize="20sp"
-                android:textColor="@color/white" />
-
-        </android.support.v7.widget.Toolbar>
     </RelativeLayout>
 </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>
