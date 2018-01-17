@@ -4,6 +4,11 @@
     <!-- Toolbar titles -->
     <string name="dashboard">Dashboard</string>
 
+    <!-- Login -->
+    <string name="login_username">Username/NIK</string>
+    <string name="login_password">Password</string>
+    <string name="login_hint">Login</string>
+
     <!-- Tab content -->
     <string name="tab_node">Node B</string>
     <string name="tab_map">Map</string>
