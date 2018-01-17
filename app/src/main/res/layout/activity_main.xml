@@ -72,17 +72,18 @@
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.Toolbar
-            android:paddingTop="20dp"
             android:fitsSystemWindows="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Siborder"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="@color/white" />
+
         </android.support.v7.widget.Toolbar>
     </RelativeLayout>
 </RelativeLayout>
