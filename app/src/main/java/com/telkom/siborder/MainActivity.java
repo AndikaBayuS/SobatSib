@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout =findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-        tabLayout.getTabAt(0).setText("Node B");
-        tabLayout.getTabAt(1).setText("Maps");
-        tabLayout.getTabAt(2).setText("Quadric");
+        tabLayout.getTabAt(0).setText(R.string.tab_node);
+        tabLayout.getTabAt(1).setText(R.string.tab_map);
+        tabLayout.getTabAt(2).setText(R.string.tab_quadric);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);

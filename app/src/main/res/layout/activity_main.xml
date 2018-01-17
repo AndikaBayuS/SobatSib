@@ -80,7 +80,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Siborder"
+                android:text="@string/dashboard"
                 android:textSize="20sp"
                 android:textColor="@color/white" />
 

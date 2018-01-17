@@ -3,19 +3,19 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_home"
-        android:title="Home">
+        android:title="@string/bar_home">
     </item>
 
     <item
         android:id="@+id/ongoing"
         android:icon="@drawable/rocket"
-        android:title="Ongoing">
+        android:title="@string/bar_ongoing">
     </item>
 
     <item
         android:id="@+id/inventory"
         android:icon="@drawable/square"
-        android:title="Inventory">
+        android:title="@string/bar_inventory">
 
     </item>
 </menu>
