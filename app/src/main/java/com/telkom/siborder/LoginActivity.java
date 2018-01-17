@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
 
         password.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+            public boolean onEditorAction(TextView text, int actionId, KeyEvent event) {
                 boolean handled = false;
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     sendLogin();
@@ -58,9 +58,9 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(next);
             finish();
         } else if (user.matches("") || pass.matches("")){
-            Toast.makeText(getApplication(),"Username atau password tidak boleh kosong", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplication(), R.string.login_error_empty, Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(getApplication(), "Gagal Login, Username atau password Salah", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplication(), R.string.login_error_invalid, Toast.LENGTH_LONG).show();
         }
     }
 }

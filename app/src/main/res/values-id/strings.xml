@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">Siborder</string>
-
     <!-- Toolbar titles -->
     <string name="dashboard">Dashboard</string>
 
@@ -8,8 +6,8 @@
     <string name="login_username">Username/NIK</string>
     <string name="login_password">Password</string>
     <string name="login_hint">Login</string>
-    <string name="login_error_empty">Username and password cannot be empty</string>
-    <string name="login_error_invalid">Invalid username or password</string>
+    <string name="login_error_empty">Username dan password tidak boleh kosong</string>
+    <string name="login_error_invalid">Login gagal, username atau password salah</string>
 
     <!-- Tab content -->
     <string name="tab_node">Node B</string>
