@@ -7,4 +7,6 @@
     <color name="wut">#E0E0E0</color>
     <color name="darkgrey">#6c6c6c</color>
     <color name="grey">#c3c3c3</color>
+
+    <color name="ic_launcher_background">#FFFFFF</color>
 </resources>
