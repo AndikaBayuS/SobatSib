@@ -18,4 +18,11 @@
         android:title="@string/bar_inventory">
 
     </item>
+
+    <item
+        android:id="@+id/mail"
+        android:icon="@drawable/ic_email"
+        android:title="@string/bar_mail">
+
+    </item>
 </menu>

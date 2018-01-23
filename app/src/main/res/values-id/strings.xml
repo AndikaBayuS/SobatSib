@@ -18,4 +18,5 @@
     <string name="bar_home">Home</string>
     <string name="bar_ongoing">Ongoing</string>
     <string name="bar_inventory">Inventory</string>
+    <string name="bar_mail">Mail</string>
 </resources>
