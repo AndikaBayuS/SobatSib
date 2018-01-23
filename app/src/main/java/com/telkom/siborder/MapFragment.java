@@ -1,6 +1,7 @@
 package com.telkom.siborder;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -28,7 +29,7 @@ import com.google.android.gms.tasks.Task;
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     @Override
-    public void onMapReady( @Nullable GoogleMap googleMap) {
+    public void onMapReady(GoogleMap googleMap) {
         Toast.makeText(getActivity(), "Map is Ready", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onMapReady: map is ready");
         mMap = googleMap;
@@ -60,6 +61,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     GoogleMap mMap;
 
     @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(context);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         return inflater.inflate(R.layout.fragment_map, container, false);
@@ -73,31 +80,27 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     private void getDeviceLocation(){
         Log.d(TAG, "getDeviceLocation: Getting current device location");
 
-        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
-
         try {
-            if(mLocationPermissionGranted){
-
+            if (mLocationPermissionGranted) {
                 final Task location = mFusedLocationProviderClient.getLastLocation();
                 location.addOnCompleteListener(new OnCompleteListener() {
-
                     @Override
                     public void onComplete(@NonNull Task task) {
                         if(task.isSuccessful()) {
                             Log.d(TAG, "onComplete: found location !");
                             Location currentLocation = (Location) task.getResult();
 
-                            moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
-                                    DEFAULT_ZOOM);
-
-                        }else{
+                            if (currentLocation!= null) {
+                                moveCamera(new LatLng(currentLocation.getLatitude(),
+                                                currentLocation.getLongitude()), DEFAULT_ZOOM);
+                            }
+                        } else {
                             Log.d(TAG, "onComplete: current ocation is null");
                         }
                     }
                 });
             }
-
-        }catch (SecurityException e){
+        } catch (SecurityException e) {
             Log.d(TAG, "getDeviceLocation: SecurityException : " + e.getMessage());
         }
     }
@@ -109,8 +112,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     private void initMap(){
         Log.d(TAG, "initMap: Initializing map");
-        SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager().findFragmentById(R.id.map);
-
+        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
