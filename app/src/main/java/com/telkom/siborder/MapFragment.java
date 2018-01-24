@@ -43,7 +43,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 return;
             }
             mMap.setMyLocationEnabled(true);
-            mMap.getUiSettings().setMyLocationButtonEnabled(false);
+            mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
         }
     }
