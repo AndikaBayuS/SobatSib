@@ -56,7 +56,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     private static final float DEFAULT_ZOOM = 15f;
 
 
-    Boolean mLocationPermissionGranted = false;
+    Boolean mLocationPermissionGranted = true;
     FusedLocationProviderClient mFusedLocationProviderClient;
     GoogleMap mMap;
 

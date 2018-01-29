@@ -3,6 +3,9 @@
 
     <!-- Toolbar titles -->
     <string name="dashboard">Dashboard</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="inventory">Inventory</string>
+    <string name="mail">Mail</string>
 
     <!-- Login -->
     <string name="login_username">Username/NIK</string>
@@ -21,4 +24,7 @@
     <string name="bar_ongoing">Ongoing</string>
     <string name="bar_inventory">Inventory</string>
     <string name="bar_mail">Mail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
