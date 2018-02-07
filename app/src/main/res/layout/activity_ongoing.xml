@@ -21,8 +21,190 @@
                 android:layout_height="wrap_content">
 
             </android.support.design.widget.AppBarLayout>
-
         </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELECTED DATE : 01/01/2018 - 29/01/2018"
+                    android:layout_marginTop="70dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="START DATE"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROJECT"
+                    android:layout_marginTop="490dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="BTS POS."
+                    android:layout_marginTop="550dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIORITY"
+                    android:layout_marginTop="430dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BATCH"
+                    android:id="@+id/lblTitle"
+                    android:layout_marginTop="370dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SERVICE"
+                    android:layout_marginTop="295dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginRight="165dp"
+                    android:text="S.D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON GOING PROJECT - NEW LINK"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="END DATE"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <EditText
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Date"
+                    android:id="@+id/tvDate"
+                    android:layout_marginTop="120dp"
+                    android:textSize="15dp"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Date"
+                    android:id="@+id/tvDialog"
+                    android:layout_marginTop="230dp"
+                    android:textSize="15dp"
+                    android:singleLine="true"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2G"
+                    android:layout_marginTop="320dp"
+                    android:layout_marginLeft="23dp"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3G"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="320dp"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="320dp"
+                    android:text="4G" />
+
+                <Spinner
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="390dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/spinner1" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="450dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="510dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="570dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonred"
+                    android:text="FILTER"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="615dp"
+                    android:textColor="#fff"/>
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttonred"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="700dp"/>
+            </RelativeLayout>
+        </ScrollView>
 
         <RelativeLayout
             android:layout_below="@+id/topBar"
@@ -45,7 +227,6 @@
                 app:menu="@menu/bottom_navigation_menu">
 
             </android.support.design.widget.BottomNavigationView>
-
         </RelativeLayout>
 
         <RelativeLayout
