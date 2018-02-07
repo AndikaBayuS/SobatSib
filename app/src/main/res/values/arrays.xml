@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="batch_array">
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>UNDEFINED</item>
+    </string-array>
+
+    <string-array name="priority_array">
+        <item>ALL</item>
+        <item>P1 (MOS,Recti,Power OK)</item>
+        <item>P2 (CME On Going - RFI)</item>
+        <item>P3 (Sitac)</item>
+    </string-array>
+
+    <string-array name="project_array">
+        <item>ALL</item>
+        <item>NEWLINK</item>
+        <item>MODERNIZATION</item>
+    </string-array>
+
+    <string-array name="btspos_array">
+        <item>ALL</item>
+        <item>END SITE</item>
+        <item>INTERMEDIATE</item>
+    </string-array>
+
+    <string-array name="prio_array">
+        <item>ALL</item>
+        <item>END SITE</item>
+        <item>INTERMEDIATE</item>
+    </string-array>
+
+    <string-array name="priok_array">
+        <item>ALL</item>
+        <item>P1 (RFI - MOS)</item>
+        <item>P2 (CME On Going)</item>
+        <item>P3 (Sitac)</item>
+    </string-array>
+
+    <string-array name="oppo_array">
+        <item>ALL</item>
+        <item>HIGH</item>
+        <item>LOW</item>
+    </string-array>
+</resources>
