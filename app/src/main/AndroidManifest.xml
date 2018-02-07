@@ -31,9 +31,12 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".OngoingActivity" />
+        <activity
+            android:name=".OngoingActivity"
+            android:theme="@style/Ongoing" />
         <activity android:name=".InvActivity" />
-        <activity android:name=".MailActivity"></activity>
+        <activity android:name=".MailActivity" />
+        <activity android:name=".UpActivity"></activity>
     </application>
 
 </manifest>
