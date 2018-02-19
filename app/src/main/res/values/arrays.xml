@@ -49,4 +49,9 @@
         <item>HIGH</item>
         <item>LOW</item>
     </string-array>
+
+    <string-array name="test">
+        <item> Test 1</item>
+        <item> Test 2</item>
+    </string-array>
 </resources>
