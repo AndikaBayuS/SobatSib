@@ -29,9 +29,10 @@ public class OngoingActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
+    private ArrayList<ListItem> mListItem;
     ListView listView;
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
+    private ListAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private TextView mDisplayDate1;
     private TextView mDisplayDate2;
@@ -47,17 +48,8 @@ public class OngoingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ongoing);
 
-        ArrayList<ListItem> listItem = new ArrayList<>();
-        listItem.add(new ListItem("Line 1","Line 4"));
-        listItem.add(new ListItem("Line 3","Line 4"));
-
-        mRecyclerView = findViewById(R.id.recyclerView);
-        mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new ListAdapter(listItem);
-
-        mRecyclerView.setLayoutManager(mLayoutManager);
-        mRecyclerView.setAdapter(mAdapter);
+        createItemList();
+        buildRecyclerView();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -91,5 +83,19 @@ public class OngoingActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    public void createItemList() {
+        mListItem= new ArrayList<>();
+        mListItem.add(new ListItem("Line 1","Line 4"));
+        mListItem.add(new ListItem("Line 3","Line 4"));
+    }
+
+    public void buildRecyclerView() {
+        mRecyclerView = findViewById(R.id.recyclerView);
+        mRecyclerView.setHasFixedSize(true);
+        mLayoutManager = new LinearLayoutManager(this);
+        mAdapter = new ListAdapter(mListItem);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setAdapter(mAdapter);
     }
 }
