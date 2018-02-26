@@ -12,7 +12,6 @@
     <!-- Tab content -->
     <string name="tab_node">Node B</string>
     <string name="tab_map">Map</string>
-    <string name="tab_quadric">Quadric</string>
 
     <!-- Bottom bar items -->
     <string name="bar_home">Home</string>
