@@ -1,26 +1,619 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <Button
-        android:layout_marginTop="75dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/BtnTEST"
-        android:text="Btn1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textSize="25dp"
-        android:text="Tab1"
-        android:layout_marginTop="40dp"
-        android:id="@+id/TextTab1"
-        android:layout_below="@id/BtnTEST"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Newlink 2018"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="20dp"
+                app:style="STROKE"
+                app:textColor="@color/colorPrimary"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="60dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="12dp"
+                app:style="STROKE"
+                app:textColor="#43A047"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="40dp"
+                android:text="End Site"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="140dp"
+                android:text="Imdt. Site"
+                android:textColor="#000000" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="160dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="12dp"
+                app:style="STROKE"
+                app:textColor="#43A047"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="40dp"
+                android:text="Target"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="57dp"
+                android:text="3576"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="90dp"
+                android:text="3120"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="90dp"
+                android:text="End Site   : "
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="105dp"
+                android:text="456"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="105dp"
+                android:text="Imdt. Site :"
+                android:textSize="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="140dp"
+                android:text="On Air"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="155dp"
+                android:text="2170"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="190dp"
+                android:text="1860"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="190dp"
+                android:text="End Site   : "
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="205dp"
+                android:text="310"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="205dp"
+                android:text="Imdt. Site :"
+                android:textSize="10dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="250dp"
+                android:background="@drawable/buttonred"
+                android:text=" See Detail >> "
+                android:textColor="#ffffff" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="610dp"
+                android:text="Bandwidth 2018"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_6"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="365dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="12dp"
+                app:style="STROKE"
+                app:textColor="#43A047"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="635dp"
+                android:text="End Site"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="735dp"
+                android:text="Imdt. Site"
+                android:textColor="#000000" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_7"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="465dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="12dp"
+                app:style="STROKE"
+                app:textColor="#43A047"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_9"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="655dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="12dp"
+                app:style="STROKE"
+                app:textColor="#43A047"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="635dp"
+                android:text="Target"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="650dp"
+                android:text="5536"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="685dp"
+                android:text="3120"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="785dp"
+                android:text="3120"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="700dp"
+                android:text="456"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="700dp"
+                android:text="Imdt. Site :"
+                android:textSize="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="735dp"
+                android:text="On Air"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="750dp"
+                android:text="2170"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="495dp"
+                android:text="1860"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="685dp"
+                android:text="End Site   : "
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="785dp"
+                android:text="End Site   : "
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="510dp"
+                android:text="310"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="800dp"
+                android:text="310"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="510dp"
+                android:text="Imdt. Site :"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="800dp"
+                android:text="Imdt. Site :"
+                android:textSize="10dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="550dp"
+                android:background="@drawable/buttonred"
+                android:text=" See Detail >> "
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="310dp"
+                android:text="Upgrade 2018"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="365dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="20dp"
+                app:style="STROKE"
+                app:textColor="@color/colorPrimary"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="345dp"
+                android:text="End Site"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="445dp"
+                android:text="Imdt. Site"
+                android:textColor="#000000" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_8"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="660dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="20dp"
+                app:style="STROKE"
+                app:textColor="@color/colorPrimary"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_10"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="760dp"
+                app:max="100"
+                app:ringColor="@android:color/holo_green_dark"
+                app:ringProgressColor="@color/colorPrimaryDark"
+                app:ringWidth="12dp"
+                app:style="STROKE"
+                app:textColor="#43A047"
+                app:textIsShow="true"
+                app:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="345dp"
+                android:text="Target"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="363dp"
+                android:text="5536"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="395dp"
+                android:text="3120"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="395dp"
+                android:text="End Site   : "
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="410dp"
+                android:text="456"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="410dp"
+                android:text="Imdt. Site :"
+                android:textSize="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="445dp"
+                android:text="On Air"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="460dp"
+                android:text="2170"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="495dp"
+                android:text="1860"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="495dp"
+                android:text="End Site   : "
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="510dp"
+                android:text="310"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="510dp"
+                android:text="Imdt. Site :"
+                android:textSize="10dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="840dp"
+                android:background="@drawable/buttonred"
+                android:text=" See Detail >> "
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </ScrollView>
+
 
 </RelativeLayout>
