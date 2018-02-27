@@ -36,8 +36,7 @@
             android:theme="@style/Ongoing" />
         <activity android:name=".InvActivity" />
         <activity android:name=".MailActivity" />
-        <activity android:name=".UpActivity" />
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".UpActivity"></activity>
     </application>
 
 </manifest>
