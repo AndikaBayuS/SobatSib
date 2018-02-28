@@ -23,8 +23,6 @@ import java.util.Calendar;
 
 public class OngoingActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
-    private static final String TAG = "MainActivity";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
