@@ -9,6 +9,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:theme="@style/AppTheme.Toolbar"
+                app:titleTextAppearance="@style/AppTheme.Toolbar.Title"
+                app:title="@string/ongoing" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_below="@id/tool"
@@ -20,9 +34,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabs"
+                    android:layout_gravity="center_horizontal"
+                    app:tabMode="scrollable"
+                    app:tabTextColor="@color/white"
+                    app:tabSelectedTextColor="@color/white"
+                    android:background="@drawable/tabcolor">
+                </android.support.design.widget.TabLayout>
             </android.support.design.widget.AppBarLayout>
         </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/topBar"
+            android:layout_above="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container">
+
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
         <RelativeLayout
             android:layout_below="@+id/topBar"
             android:layout_above="@+id/bottomBar"
@@ -44,22 +81,6 @@
                 app:menu="@menu/bottom_navigation_menu">
 
             </android.support.design.widget.BottomNavigationView>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/tool"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.v7.widget.Toolbar
-                android:fitsSystemWindows="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                app:theme="@style/AppTheme.Toolbar"
-                app:titleTextAppearance="@style/AppTheme.Toolbar.Title"
-                app:title="@string/ongoing" />
-
         </RelativeLayout>
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>
