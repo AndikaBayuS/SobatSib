@@ -17,6 +17,13 @@
     <!-- Tab content -->
     <string name="tab_node">Node B</string>
     <string name="tab_map">Map</string>
+    <string name="tab_newlink">New Link</string>
+    <string name="tab_up">Upgrade</string>
+    <string name="tab_collo">Collo</string>
+    <string name="tab_temp">Temporary</string>
+    <string name="tab_fiber">Fiberization</string>
+    <string name="tab_swap">Swap ONT</string>
+    <string name="tab_sr">Site Relocation</string>
 
     <!-- Bottom bar items -->
     <string name="bar_home">Home</string>
