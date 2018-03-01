@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.telkom.siborder.FiberizationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar"
+                android:layout_marginTop="72dp"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="26dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_earth"
+                android:layout_marginTop="335dp"
+                android:layout_marginLeft="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECTED DATE : 01/01/2018 - 29/01/2018"
+                android:layout_marginTop="70dp"
+                android:textSize="14dp"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="30dp"
+                android:text="START DATE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="BATCH"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="48dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIO"
+                android:layout_marginTop="340dp"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="190dp"
+                android:text="S.D"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ON GOING PROJECT - FIBERIZATION"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="9dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="END DATE"
+                android:layout_marginTop="210dp"
+                android:layout_marginLeft="30dp"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:id="@+id/tvDate"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:id="@+id/tvDialog"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="230dp"
+                android:textSize="15dp"/>
+
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="310dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/spinner1"/>
+
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="360dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/spinner2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp">
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonred"
+                    android:text="FILTER"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="400dp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
